@@ -143,3 +143,20 @@
     text-decoration: none;
     outline: none;
 }
+
+.btn-cta {
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.btn-cta a {
+    display: block;
+    white-space: nowrap;
+}
+
+.btn-cta {
+    min-width: 350px;
+}
+
