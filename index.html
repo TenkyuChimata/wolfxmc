@@ -65,7 +65,9 @@
     <link rel="dns-prefetch" href="//r2.wolfx.jp" />
 
     <!-- CSS：保持你原有引用（建议加版本号便于缓存控制） -->
-    <link rel="stylesheet" href="css/Roboto.css?v=1" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/magnific-popup.css?v=1" />
     <link rel="stylesheet" href="css/bootstrap.css?v=1" />
     <link rel="stylesheet" href="css/mstyle.css?v=1" />
@@ -87,7 +89,7 @@
 
     <!-- JS：尽量 defer，避免阻塞（你这个页面脚本多，收益明显） -->
     <script defer src="js/mc-player-counter.js"></script>
-    <script defer src="https://wolfx.jp/js/runtime.js"></script>
+    <script data-cfasync="false" src="https://wolfx.jp/js/runtime.js"></script>
   </head>
 
   <body>
@@ -299,8 +301,14 @@
         </div>
       </div>
     </div>
-    <script>
-      runtime("2019/5/18");
+    <script data-cfasync="false">
+      window.addEventListener("DOMContentLoaded", () => {
+        if (typeof window.runtime === "function") {
+          window.runtime("2019/5/18");
+        } else {
+          console.error("runtime() not loaded. Check runtime.js path or Rocket Loader.");
+        }
+      });
     </script>
     <script src="https://r2.wolfx.jp/js/jquery/3.7.1.min.js"></script>
     <script src="https://wolfx.jp/js/bootstrap.min.js"></script>
