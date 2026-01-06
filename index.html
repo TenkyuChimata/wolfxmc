@@ -64,13 +64,17 @@
     <link rel="stylesheet" href="assets/css/cute-light.css?v=1" />
 
     <!-- Keep your existing status/online counter -->
-    <script defer src="assets/js/mc-player-counter.js"></script>
+    <script
+      data-cfasync="false"
+      defer
+      src="assets/js/mc-player-counter.js"
+    ></script>
 
     <!-- runtime.js (optional keep) -->
     <script data-cfasync="false" src="https://wolfx.jp/js/runtime.js"></script>
 
     <!-- App (contains i18n + map size + uptime + copy IP) -->
-    <script defer src="assets/js/app.js?v=1"></script>
+    <script data-cfasync="false" defer src="assets/js/app.js?v=1"></script>
 
     <!-- Structured -->
     <script type="application/ld+json">
@@ -285,7 +289,12 @@
                 <div class="k" data-i18n="kv_ip">服务器 IP</div>
                 <div class="v">
                   <code>wolfx.jp</code>
-                  <button class="mini-btn" id="copyIpMini" data-ip="wolfx.jp" data-i18n="btn_copy">
+                  <button
+                    class="mini-btn"
+                    id="copyIpMini"
+                    data-ip="wolfx.jp"
+                    data-i18n="btn_copy"
+                  >
                     复制
                   </button>
                 </div>
@@ -300,9 +309,7 @@
               <div class="kv">
                 <div class="k" data-i18n="kv_map_policy">地图策略</div>
                 <div class="v">
-                  <span data-i18n="kv_map_never_reset"
-                    >永不重置</span
-                  >
+                  <span data-i18n="kv_map_never_reset">永不重置</span>
                   <span class="map-size">
                     · <span data-i18n="kv_map_size">地图大小</span>：
                     <span id="mapSizeTB">2.8</span> TB
@@ -362,31 +369,33 @@
             </p>
           </div>
 
-            <div class="grid-4">
+          <div class="grid-4">
             <article class="card">
-                <h3 data-i18n="feat1_title">永不重置</h3>
-                <p data-i18n="feat1_desc">建筑党放心肝，成果不会突然清空。</p>
-                <div class="tag" data-i18n="feat1_tag">🧱 Never Reset</div>
+              <h3 data-i18n="feat1_title">永不重置</h3>
+              <p data-i18n="feat1_desc">建筑党放心肝，成果不会突然清空。</p>
+              <div class="tag" data-i18n="feat1_tag">🧱 Never Reset</div>
             </article>
 
             <article class="card">
-                <h3 data-i18n="feat2_title">原版优先</h3>
-                <p data-i18n="feat2_desc">尽量不改机制，红石/农场/探索都更还原。</p>
-                <div class="tag" data-i18n="feat2_tag">🍃 Vanilla First</div>
+              <h3 data-i18n="feat2_title">原版优先</h3>
+              <p data-i18n="feat2_desc">
+                尽量不改机制，红石/农场/探索都更还原。
+              </p>
+              <div class="tag" data-i18n="feat2_tag">🍃 Vanilla First</div>
             </article>
 
             <article class="card">
-                <h3 data-i18n="feat3_title">保持新版本</h3>
-                <p data-i18n="feat3_desc">在稳定前提下尽量跟随最新正式版更新。</p>
-                <div class="tag" data-i18n="feat3_tag">✨ Always Updated</div>
+              <h3 data-i18n="feat3_title">保持新版本</h3>
+              <p data-i18n="feat3_desc">在稳定前提下尽量跟随最新正式版更新。</p>
+              <div class="tag" data-i18n="feat3_tag">✨ Always Updated</div>
             </article>
 
             <article class="card">
-                <h3 data-i18n="feat4_title">少限制高自由</h3>
-                <p data-i18n="feat4_desc">只要不违反规则，你想怎么玩都可以。</p>
-                <div class="tag" data-i18n="feat4_tag">🎈 High Freedom</div>
+              <h3 data-i18n="feat4_title">少限制高自由</h3>
+              <p data-i18n="feat4_desc">只要不违反规则，你想怎么玩都可以。</p>
+              <div class="tag" data-i18n="feat4_tag">🎈 High Freedom</div>
             </article>
-            </div>
+          </div>
         </div>
       </section>
 
