@@ -45,7 +45,7 @@ class PlayerCounter {
       // Display server status.
       // offline/online
       if (displayStatus !== null) {
-        this.element.innerText = response.online ? '正常' : '离线';
+        this.element.innerText = response.online ? 'OK' : 'FAIL';
         return;
       }
 
@@ -63,7 +63,7 @@ class PlayerCounter {
   }
 }
 
-const onDomLoad = function() {
+const onDomLoad = function () {
   const elements = document.querySelectorAll('[data-playercounter-ip]');
 
   for (let i = 0; i < elements.length; i++) {

@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" data-lang="zh">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 标题：关键词靠前 + 品牌靠后（你现在的已经不错，我稍微强化） -->
     <title>Wolfx Survival｜我的世界纯净生存服务器｜IP: Wolfx.jp</title>
-
-    <!-- 描述：明确卖点 + 版本 + 永不重置 + 免费 -->
     <meta
       name="description"
-      content="Wolfx Survival：我的世界/Minecraft 纯净原版生存服务器，地图永不重置，高自由度少限制，长期稳定运行，自 2019 年持续开放，永久免费。服务器 IP：Wolfx.jp。"
+      content="Wolfx Survival：Minecraft 纯净原版生存服务器，地图永不重置，高自由度少限制，自 2019 年长期稳定运行，永久免费。服务器 IP：Wolfx.jp。"
     />
-
-    <!-- 关键词：精简、聚焦“Minecraft 生存服务器” -->
     <meta
       name="keywords"
       content="Minecraft服务器,我的世界服务器,生存服务器,纯净生存,原版生存,不重置地图,公益服务器,MC服务器,vanilla survival server,Wolfx Survival"
     />
-
     <meta name="author" content="Wolfx" />
     <meta
       name="robots"
       content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
     />
-
-    <!-- Canonical：避免被参数/锚点/追踪链接造成重复收录 -->
     <link rel="canonical" href="https://mc.wolfx.jp/" />
-
-    <!-- 语言：这个页面是中英混排，建议用 zh-CN 更贴近主要受众（如你主受众是日文可改 ja） -->
     <meta http-equiv="content-language" content="zh-CN" />
 
-    <!-- Open Graph：分享卡片 -->
+    <!-- OG -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Wolfx Project" />
     <meta
@@ -46,7 +36,6 @@
     <meta property="og:url" content="https://mc.wolfx.jp/" />
     <meta property="og:locale" content="zh_CN" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -57,24 +46,33 @@
       content="地图永不重置｜原版生存｜永久免费｜IP: Wolfx.jp"
     />
 
-    <!-- 图标 -->
     <link rel="icon" href="https://wolfx.jp/images/favicon.ico" sizes="any" />
 
-    <!-- 性能：预连接（你有 r2 静态域名） -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Performance -->
     <link rel="preconnect" href="https://r2.wolfx.jp" crossorigin />
     <link rel="dns-prefetch" href="//r2.wolfx.jp" />
 
-    <!-- CSS：保持你原有引用（建议加版本号便于缓存控制） -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/magnific-popup.css?v=1" />
-    <link rel="stylesheet" href="css/bootstrap.css?v=1" />
-    <link rel="stylesheet" href="css/mstyle.css?v=1" />
-    <link rel="stylesheet" id="theme-switch" href="css/style.css?v=1" />
-    <link rel="stylesheet" href="css/index.css?v=1" />
+    <!-- Cute Light CSS -->
+    <link rel="stylesheet" href="assets/css/cute-light.css?v=1" />
 
-    <!-- 结构化数据：把它当成“游戏服务器/社区入口页” -->
+    <!-- Keep your existing status/online counter -->
+    <script defer src="assets/js/mc-player-counter.js"></script>
+
+    <!-- runtime.js (optional keep) -->
+    <script data-cfasync="false" src="https://wolfx.jp/js/runtime.js"></script>
+
+    <!-- App (contains i18n + map size + uptime + copy IP) -->
+    <script defer src="assets/js/app.js?v=1"></script>
+
+    <!-- Structured -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -86,234 +84,396 @@
         "publisher": { "@type": "Organization", "name": "Wolfx Project" }
       }
     </script>
-
-    <!-- JS：尽量 defer，避免阻塞（你这个页面脚本多，收益明显） -->
-    <script defer src="js/mc-player-counter.js"></script>
-    <script data-cfasync="false" src="https://wolfx.jp/js/runtime.js"></script>
   </head>
 
   <body>
-    <div class="fh5co-loader"></div>
-    <div id="fh5co-page">
-      <section id="fh5co-header">
-        <div class="container">
-          <nav role="navigation">
-            <ul class="pull-left left-menu">
-              <li><a href="rules.html" target="_blank">规则 | Rules</a></li>
-              <li><a href="vote.html" target="_blank">投票 | Vote</a></li>
-              <li>
-                <a href="https://afdian.net/a/wolfx" target="_blank"
-                  >捐助 | Donate</a
-                >
-              </li>
-            </ul>
-            <h1 id="fh5co-logo"><a href="#">Wolfx</a></h1>
-            <ul class="pull-right right-menu">
-              <li><a href="https://plan.wolfx.jp" target="_blank">Plan</a></li>
-              <li>
-                <a href="https://qm.qq.com/q/bs2kNWwLEk" target="_blank"
-                  >QQ群</a
-                >
-              </li>
-              <li class="fh5co-cta-btn">
-                <a href="https://discord.gg/3jP5Ppn" target="_blank">Discord</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark">🐾</span>
+          <span class="brand-text">
+            <span class="brand-title">Wolfx Survival</span>
+            <span class="brand-sub">Vanilla · Never Reset · Free</span>
+          </span>
+        </a>
 
-      <section
-        id="fh5co-hero"
-        class="js-fullheight"
-        style="background-image: url(https://api.wolfx.jp/img.php)"
-        data-next="yes"
-      >
-        <div class="fh5co-overlay"></div>
-        <div class="container">
-          <div class="fh5co-intro js-fullheight">
-            <div class="fh5co-intro-text">
-              <div class="fh5co-left-position">
-                <h2>Wolfx Survival</h2>
-                <h3>
-                  Minecraft 我的世界纯净生存服务器 | Minecraft Pure Survival
-                  Server
-                </h3>
-                <p>
-                  <a href="join.html" class="btn btn-primary" target="_blank"
-                    >IP: Wolfx.jp</a
-                  >
-                  <a
-                    href="https://www.minecraft.net/store/minecraft-java-bedrock-edition-pc"
-                    target="_blank"
-                    class="btn btn-outline"
-                    >获取 Minecraft | Get Minecraft</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <nav class="nav" aria-label="primary">
+          <a
+            href="rules.html"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_rules"
+            >规则</a
+          >
+          <a
+            href="vote.html"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_vote"
+            >投票</a
+          >
+          <a
+            href="https://afdian.net/a/wolfx"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_donate"
+            >捐助</a
+          >
+          <a href="https://plan.wolfx.jp" target="_blank" rel="noopener"
+            >Plan</a
+          >
+          <a
+            href="https://qm.qq.com/q/bs2kNWwLEk"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_qq"
+            >QQ群</a
+          >
+          <a
+            class="nav-cta"
+            href="https://discord.gg/3jP5Ppn"
+            target="_blank"
+            rel="noopener"
+            >Discord</a
+          >
+        </nav>
 
-      <a name="p1"></a>
-      <section id="fh5co-features">
-        <div class="container">
-          <div class="row text-center row-bottom-padded-md">
-            <div class="col-md-8 col-md-offset-2">
-              <h2 class="fh5co-lead">Wolfx Survival</h2>
-              <p class="fh5co-sub-lead">
-                服务器状态 | Status
-                <b
-                  ><span
-                    data-playercounter-ip="wolfx.jp"
-                    data-playercounter-status
-                    >获取中 | Fetching</span
-                  ></b
-                >
-                当前在线人数 | Online Players
-                <b
-                  ><span data-playercounter-ip="wolfx.jp"
-                    >获取中 | Fetching</span
-                  ></b
-                >
-              </p>
-              <p class="fh5co-sub-lead">
-                服务器地址 | Server IP: Wolfx.jp 客户端支持版本 | Support
-                version: 1.9-1.21.11
-              </p>
-              <p class="fh5co-sub-lead">
-                Wolfx
-                是一个以原版纯净生存为主，地图永不重置的高自由度少限制服务器。本服对原版生存机制几乎没有修改，始终跟随最新更新，并且永久公益免费开放。
-                | Wolfx is a high-freedom, minimal-restriction server focused on
-                pure vanilla survival, with maps never resetting. We make
-                minimal modifications to the vanilla survival mechanics, always
-                follow the latest updates, and remain permanently free to play.
-              </p>
-              <!--<a href="https://mirrors.tuna.tsinghua.edu.cn/Adoptium/21/jre/" target="_blank" class="btn btn-primary btn-cta">Java 21 下载 | Download Java 21</a>
-                        <a href="join.html" target="_blank" class="btn btn-primary btn-cta">加入服务器 | Join the Server</a>-->
-            </div>
-          </div>
+        <!-- Language switch -->
+        <div class="lang-switch" aria-label="Language switch">
+          <button class="lang-btn" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
         </div>
-      </section>
 
-      <section id="fh5co-features-2">
-        <div class="container">
-          <div class="col-md-6 col-md-push-6">
-            <figure class="fh5co-feature-image">
-              <img src="images/bg2.jpg" alt="" />
-            </figure>
-          </div>
-          <div class="col-md-6 col-md-pull-6">
-            <h2 class="fh5co-lead">Wolfx 生存服务器 | Wolfx Survival</h2>
-            <div class="fh5co-feature">
-              <div class="fh5co-text">
-                <h3>永不重置 | Never Reset</h3>
-                <p>
-                  服务器地图永不重置，您不必担心因地图重置而导致成果毁于一旦。自2019年5月运行至今，服务器资料已有
-                  <a>2.8TB</a> 之大 | The server map never resets, so you don't
-                  have to worry about losing your progress due to map resets.
-                  Since May 2019, our server data has grown to <a>2.8TB</a>.
-                </p>
-              </div>
-            </div>
-            <div class="fh5co-feature">
-              <div class="fh5co-text">
-                <h3>原版生存 | Vanilla Survival</h3>
-                <p>
-                  我们尽可能还原原版生存中的大部分特性和机制，使您的游戏体验与原版单人生存基本一致
-                  | We strive to replicate most of the features and mechanics of
-                  vanilla survival, making your gaming experience almost
-                  identical to single-player vanilla survival.
-                </p>
-              </div>
-            </div>
-            <div class="fh5co-feature">
-              <div class="fh5co-text">
-                <h3>始终最新 | Always Release</h3>
-                <p>
-                  在保证服务器稳定性的前提下，我们将始终保持运行 MC
-                  最新正式版。目前服务器运行的版本: <a>1.21.11</a> | While
-                  ensuring server stability, we always run the latest official
-                  version of Minecraft. Currently, the server is running
-                  version: <a>1.21.11</a>.
-                </p>
-              </div>
-            </div>
-            <div class="fh5co-feature">
-              <div class="fh5co-text">
-                <h3>高自由度 | High Freedom</h3>
-                <p>
-                  服务器内具有较高的自由度，您可以在服内做除违反服务器规则外的任何事情。一切由您做主，没有冗杂的限制
-                  | The server offers a high degree of freedom, allowing you to
-                  do anything that does not violate server rules. Everything is
-                  up to you, with no cumbersome restrictions.
-                </p>
-              </div>
-            </div>
-            <div class="fh5co-btn-action">
-              <a
-                href="rules.html"
-                target="_blank"
-                class="btn btn-primary btn-cta"
-                >了解服务器规则 | Learn Server Rules</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="打开菜单"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
-      <section id="fh5co-subscribe">
-        <div class="container">
-          <h3>
-            <label for="email"
-              >加入 DC 群进行讨论 | Join the Discord for Discussion</label
-            >
-          </h3>
-          <a href="https://discord.gg/3jP5Ppn" target="_blank">
-            <div align="right">
-              <button class="btn btn-primary">点击加入 | Click to Join</button>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <div class="fh5co-copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="fh5co-left">
-                <small>
-                  <span>服务器已稳如老狗的运行了</span>
-                  <span id="runtime"></span>
-                  <span>天</span>
-                </small>
-              </p>
-              <p class="fh5co-left">
-                <small
-                  >Copyright &copy;
-                  <a href="https://wolfx.jp">Wolfx Project.</a> All Rights
-                  Reserved.</small
-                >
-              </p>
-            </div>
-          </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <div class="container mobile-menu-inner">
+          <a
+            href="rules.html"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_rules"
+            >规则</a
+          >
+          <a
+            href="vote.html"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_vote"
+            >投票</a
+          >
+          <a
+            href="https://afdian.net/a/wolfx"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_donate"
+            >捐助</a
+          >
+          <a href="https://plan.wolfx.jp" target="_blank" rel="noopener"
+            >Plan</a
+          >
+          <a
+            href="https://qm.qq.com/q/bs2kNWwLEk"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav_qq"
+            >QQ群</a
+          >
+          <a
+            class="nav-cta"
+            href="https://discord.gg/3jP5Ppn"
+            target="_blank"
+            rel="noopener"
+            >Discord</a
+          >
         </div>
       </div>
-    </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-left">
+            <div class="pill">
+              <span class="pill-dot"></span>
+              <span data-i18n="pill"
+                >纯净原版生存 · 地图永不重置 · 永久公益</span
+              >
+            </div>
+
+            <h1 data-i18n-html="hero_title">
+              来玩点轻松的生存吧 ☁️<br />
+              <span class="hero-accent">Wolfx Survival</span>
+            </h1>
+
+            <p class="hero-desc" data-i18n="hero_desc">
+              以原版生存为核心，尽量不改机制。高自由度、少限制，长期稳定运行，自
+              2019 年持续开放。
+            </p>
+
+            <div class="hero-actions">
+              <button
+                class="btn btn-primary"
+                id="copyIpBtn"
+                data-ip="wolfx.jp"
+                data-i18n="btn_copy_ip"
+              >
+                复制服务器 IP：Wolfx.jp
+              </button>
+
+              <a
+                class="btn btn-soft"
+                href="join.html"
+                target="_blank"
+                rel="noopener"
+                data-i18n="btn_join_guide"
+              >
+                加入教程 / Join Guide
+              </a>
+
+              <a
+                class="btn btn-link"
+                href="https://www.minecraft.net/store/minecraft-java-bedrock-edition-pc"
+                target="_blank"
+                rel="noopener"
+                data-i18n="btn_get_mc"
+              >
+                获取 Minecraft
+              </a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-k" data-i18n="stat_status">状态</div>
+                <div class="stat-v">
+                  <span
+                    data-playercounter-ip="wolfx.jp"
+                    data-playercounter-status
+                    >获取中</span
+                  >
+                </div>
+              </div>
+              <div class="stat">
+                <div class="stat-k" data-i18n="stat_online">在线人数</div>
+                <div class="stat-v">
+                  <span data-playercounter-ip="wolfx.jp">获取中</span>
+                </div>
+              </div>
+              <div class="stat">
+                <div class="stat-k" data-i18n="stat_version">支持版本</div>
+                <div class="stat-v">1.9 - 1.21.11</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="card card-glass">
+              <div class="card-title" data-i18n="card_quick">快速信息</div>
+
+              <div class="kv">
+                <div class="k" data-i18n="kv_ip">服务器 IP</div>
+                <div class="v">
+                  <code>wolfx.jp</code>
+                  <button class="mini-btn" id="copyIpMini" data-ip="wolfx.jp" data-i18n="btn_copy">
+                    复制
+                  </button>
+                </div>
+              </div>
+
+              <div class="kv">
+                <div class="k" data-i18n="kv_server_type">服务器类型</div>
+                <div class="v" data-i18n="kv_server_type_i18n">原版生存</div>
+              </div>
+
+              <!-- Map policy + Map size TB -->
+              <div class="kv">
+                <div class="k" data-i18n="kv_map_policy">地图策略</div>
+                <div class="v">
+                  <span data-i18n="kv_map_never_reset"
+                    >永不重置</span
+                  >
+                  <span class="map-size">
+                    · <span data-i18n="kv_map_size">地图大小</span>：
+                    <span id="mapSizeTB">2.8</span> TB
+                  </span>
+                </div>
+              </div>
+
+              <div class="kv">
+                <div class="k" data-i18n="kv_runtime">稳定运行</div>
+                <div class="v">
+                  <span id="runtimeDays">加载中</span>
+                  <span data-i18n="footer_runtime_suffix">天</span>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="stack">
+                <a
+                  class="btn btn-primary btn-block"
+                  href="rules.html"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="btn_rules"
+                  >查看规则</a
+                >
+                <a
+                  class="btn btn-soft btn-block"
+                  href="vote.html"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="btn_vote"
+                  >投票支持</a
+                >
+              </div>
+
+              <p class="note" data-i18n="note">
+                （小声：先看规则再进服，会更舒服喵～）
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cute background bubbles -->
+        <div class="bubbles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="sec_features_title">我们坚持的四件事</h2>
+            <p data-i18n="sec_features_desc">
+              让服务器“简单、干净、长期、好玩”。
+            </p>
+          </div>
+
+            <div class="grid-4">
+            <article class="card">
+                <h3 data-i18n="feat1_title">永不重置</h3>
+                <p data-i18n="feat1_desc">建筑党放心肝，成果不会突然清空。</p>
+                <div class="tag" data-i18n="feat1_tag">🧱 Never Reset</div>
+            </article>
+
+            <article class="card">
+                <h3 data-i18n="feat2_title">原版优先</h3>
+                <p data-i18n="feat2_desc">尽量不改机制，红石/农场/探索都更还原。</p>
+                <div class="tag" data-i18n="feat2_tag">🍃 Vanilla First</div>
+            </article>
+
+            <article class="card">
+                <h3 data-i18n="feat3_title">保持新版本</h3>
+                <p data-i18n="feat3_desc">在稳定前提下尽量跟随最新正式版更新。</p>
+                <div class="tag" data-i18n="feat3_tag">✨ Always Updated</div>
+            </article>
+
+            <article class="card">
+                <h3 data-i18n="feat4_title">少限制高自由</h3>
+                <p data-i18n="feat4_desc">只要不违反规则，你想怎么玩都可以。</p>
+                <div class="tag" data-i18n="feat4_tag">🎈 High Freedom</div>
+            </article>
+            </div>
+        </div>
+      </section>
+
+      <!-- Community -->
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="sec_comm_title">加入社群 / Community</h2>
+            <p data-i18n="sec_comm_desc">
+              找队友、晒建筑、看公告、反馈问题，都在这里。
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card card-big">
+              <h3 data-i18n="discord_title">Discord</h3>
+              <p data-i18n="discord_desc">推荐加入：公告 & 讨论更集中。</p>
+              <a
+                class="btn btn-primary"
+                href="https://discord.gg/3jP5Ppn"
+                target="_blank"
+                rel="noopener"
+                data-i18n="discord_btn"
+              >
+                点击加入 Discord
+              </a>
+            </div>
+
+            <div class="card card-big">
+              <h3 data-i18n="qq_title">QQ群</h3>
+              <p data-i18n="qq_desc">国内交流方便，随时随地唠两句。</p>
+              <a
+                class="btn btn-soft"
+                href="https://qm.qq.com/q/bs2kNWwLEk"
+                target="_blank"
+                rel="noopener"
+                data-i18n="qq_btn"
+              >
+                点击加入 QQ 群
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="footer-title">Wolfx Project</div>
+            <div class="footer-sub">
+              <span data-i18n="footer_runtime_prefix">服务器已稳定运行</span>
+              <strong><span id="runtimeDaysFooter">加载中</span></strong>
+              <span data-i18n="footer_runtime_suffix">天</span>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <a href="https://wolfx.jp" target="_blank" rel="noopener"
+              >wolfx.jp</a
+            >
+            <span>·</span>
+            <a href="rules.html" target="_blank" rel="noopener">Rules</a>
+            <span>·</span>
+            <a href="https://afdian.net/a/wolfx" target="_blank" rel="noopener"
+              >Donate</a
+            >
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <small
+            >© <span id="yearNow"></span> Wolfx Project. All Rights
+            Reserved.</small
+          >
+        </div>
+      </footer>
+    </main>
+
     <script data-cfasync="false">
       window.addEventListener("DOMContentLoaded", () => {
         if (typeof window.runtime === "function") {
-          window.runtime("2019/5/18");
-        } else {
-          console.error("runtime() not loaded. Check runtime.js path or Rocket Loader.");
+          try {
+            window.runtime("2019/5/18");
+          } catch (e) {}
         }
       });
     </script>
-    <script src="https://r2.wolfx.jp/js/jquery/3.7.1.min.js"></script>
-    <script src="https://wolfx.jp/js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>

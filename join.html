@@ -1,47 +1,253 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <title>Wolfx Survival IPs</title>
+    <title>加入服务器｜Wolfx Survival IPs</title>
+
     <meta name="robots" content="index,follow" />
-    <meta name="author" content="Wolfx" />
+    <meta name="author" content="Wolfx Project" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link href="https://wolfx.jp/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://wolfx.jp/css/index.css" rel="stylesheet" />
     <link href="https://wolfx.jp/css/api_table.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="https://wolfx.jp/images/favicon.ico" />
+
     <script src="https://r2.wolfx.jp/js/jquery/3.7.1.min.js"></script>
     <script src="https://wolfx.jp/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        line-height: 1.75;
+      }
+      .page-title {
+        margin: 16px 0 12px;
+        font-weight: 700;
+      }
+      .sub {
+        color: #666;
+        margin-top: 6px;
+      }
+      .cardish {
+        padding: 18px 18px;
+        border: 1px solid #eee;
+        background: #fff;
+        border-radius: 6px;
+        margin-bottom: 18px;
+      }
+      .ip-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .ip-code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        font-size: 18px;
+        padding: 10px 12px;
+        background: #f7f7f7;
+        border: 1px solid #e9e9e9;
+        border-radius: 6px;
+        user-select: all;
+      }
+      .hint {
+        color: #777;
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
+      .mini {
+        font-size: 13px;
+        color: #777;
+      }
+      .hr-soft {
+        border-top: 1px solid #eee;
+        margin: 16px 0;
+      }
+      .k {
+        font-weight: 700;
+      }
+      .toastx {
+        display: inline-block;
+        margin-left: 8px;
+        color: #2b7a2b;
+        font-weight: 600;
+      }
+      @media (max-width: 767px) {
+        .ip-code {
+          font-size: 16px;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
       <div class="header">
-        <h3 class="text-muted">服务器地址 Wolfx Survival IPs</h3>
+        <h3 class="text-muted page-title">加入服务器 / Join Wolfx Survival</h3>
+        <p class="sub">
+          这里是最简单的加入方式：复制 IP → Minecraft 多人游戏 → 添加服务器 →
+          连接。
+          <br />
+          <span class="mini">
+            Copy the IP → Multiplayer → Add Server → Connect.
+          </span>
+        </p>
       </div>
 
       <div class="row">
         <div class="span10">
-          <div class="ads">
-            <h4>主线路(推荐)</h4>
-            <p></p>
-            <ul>
-              <li>Wolfx.jp</li>
-            </ul>
-            <h4>
-              说明: 推荐使用服务器支持的最新版本以获得最佳体验
-            </h4>
+          <!-- Main route -->
+          <div class="cardish">
+            <h4>主线路（推荐） / Main Address (Recommended)</h4>
+
+            <div class="ip-box">
+              <div class="ip-code" id="ipText" data-ip="wolfx.jp">wolfx.jp</div>
+              <button class="btn btn-primary" id="copyBtn" type="button">
+                复制 IP / Copy IP
+              </button>
+              <span id="copyToast" class="toastx" style="display: none"
+                >已复制 / Copied</span
+              >
+            </div>
+
+            <p class="hint">
+              建议使用服务器支持的最新版本以获得最佳体验。
+              <br />
+              <span class="mini">
+                We recommend using the latest supported version for the best
+                experience.
+              </span>
+            </p>
+
+            <div class="hr-soft"></div>
+
+            <p style="margin-bottom: 0">
+              <span class="k">支持版本 / Supported:</span> Java Edition
+              <strong>1.9 - 1.21.11</strong>
+              <br />
+              <span class="mini">
+                Note: This page is for Java Edition. If you need Bedrock
+                support, tell me and I’ll help you add it properly.
+              </span>
+            </p>
+          </div>
+
+          <!-- How to join -->
+          <div class="cardish">
+            <h4>加入步骤 / How to Join</h4>
+            <ol>
+              <li>
+                打开 Minecraft Java 版 → <strong>多人游戏</strong>。
+                <span class="mini">Open Minecraft Java → Multiplayer.</span>
+              </li>
+              <li>
+                点击 <strong>添加服务器</strong>。
+                <span class="mini">Click Add Server.</span>
+              </li>
+              <li>
+                <strong>服务器地址</strong> 填写：<code>wolfx.jp</code>。
+                <span class="mini">Server Address: <code>wolfx.jp</code>.</span>
+              </li>
+              <li>
+                保存 → 连接。
+                <span class="mini">Save → Join.</span>
+              </li>
+            </ol>
+            <p class="hint" style="margin-top: 10px">
+              （小提示）进服前建议先看规则页，体验会更顺畅。
+              <span class="mini"
+                >(Tip) Read rules first for a smoother start.</span
+              >
+            </p>
+          </div>
+
+          <!-- Troubleshooting -->
+          <div class="cardish">
+            <h4>常见问题 / Troubleshooting</h4>
+            <p>
+              <span class="k">Q1：</span>提示无法解析地址 / Unknown host？
+              <br />
+              <span class="mini">
+                可能是 DNS 问题。你可以尝试更换 DNS（如 1.1.1.1 /
+                8.8.8.8），或稍后重试。
+                <br />
+                Might be a DNS issue. Try another DNS (1.1.1.1 / 8.8.8.8) or
+                retry later.
+              </span>
+            </p>
+            <p>
+              <span class="k">Q2：</span>版本不匹配 / Incompatible version？
+              <br />
+              <span class="mini">
+                请切换到支持范围内的版本（1.9 -
+                1.21.11）。推荐使用较新的稳定版本。
+                <br />
+                Switch to a supported version (1.9 - 1.21.11). Newer stable
+                versions are recommended.
+              </span>
+            </p>
+            <p style="margin-bottom: 0">
+              <span class="k">Q3：</span>需要帮助 / Need help?
+              <br />
+              <span class="mini">
+                你可以在 Discord 或 QQ 群里提问（主页有入口）。
+                <br />
+                Ask in Discord or QQ group (links are on the homepage).
+              </span>
+            </p>
           </div>
         </div>
       </div>
 
       <div class="footer">
         <p>
-          Copyright &copy; <a href="https://mc.wolfx.jp">Wolfx Project.</a> All
-          Rights Reserved.
+          Copyright &copy;
+          <a href="https://mc.wolfx.jp">Wolfx Project</a>. All Rights Reserved.
         </p>
       </div>
     </div>
+
+    <script>
+      (function () {
+        const ip = "wolfx.jp";
+        const btn = document.getElementById("copyBtn");
+        const toast = document.getElementById("copyToast");
+
+        async function copyText(text) {
+          // 优先使用 Clipboard API（https）
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            return;
+          }
+          // fallback（旧浏览器/非 https）
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.left = "-9999px";
+          ta.style.top = "-9999px";
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+        }
+
+        btn.addEventListener("click", async () => {
+          try {
+            await copyText(ip);
+            toast.style.display = "inline-block";
+            clearTimeout(window.__copyToastTimer);
+            window.__copyToastTimer = setTimeout(() => {
+              toast.style.display = "none";
+            }, 1500);
+          } catch (e) {
+            alert("复制失败，请手动复制：wolfx.jp");
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
