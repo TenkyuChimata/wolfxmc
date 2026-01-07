@@ -1,5 +1,5 @@
 (function () {
-    const MAP_SIZE_TB = 2.8; // <- 地图大小（TB）在这里改
+    const MAP_SIZE_TB = 2.6; // <- 地图大小（TiB）在这里改
 
     function $(id) { return document.getElementById(id); }
 
